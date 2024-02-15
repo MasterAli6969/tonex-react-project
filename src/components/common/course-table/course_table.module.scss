@@ -1,0 +1,42 @@
+.table {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.thead_title {
+  font-size: 1.75rem;
+  margin-bottom: 3rem;
+}
+
+.thead_title th {
+  padding-bottom: 1rem;
+}
+.thead_title th div {
+  font-size: 1.25rem;
+  opacity: 0.6;
+  border-bottom: 2px solid #f8f8fc;
+}
+
+.tablets__table__title__token {
+  width: 400px;
+}
+
+.tbody tr td {
+  background-color: #f8f8fc;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.tbody tr td div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.tablets__view__all {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 1.25rem;
+  margin-bottom: 4rem;
+}

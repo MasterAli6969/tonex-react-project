@@ -1,0 +1,46 @@
+.div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sub_div {
+  position: relative;
+  width: 420px;
+  height: 185px;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.sub_div_item {
+  width: 390px;
+  min-height: 115px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, #26b9f9, #2752e7);
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  z-index: 0;
+}
+
+.sub_div_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.sub_div_img_last {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
