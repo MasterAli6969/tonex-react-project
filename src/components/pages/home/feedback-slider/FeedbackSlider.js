@@ -38,76 +38,18 @@ function FeedbackSlider() {
               class="carousel-item active bg-accent-colors"
               data-bs-interval="10000"
             >
-              <div class="container d-flex justify-content-between flex-wrap my-5">
-                <div class="mx-5">
-                  <h3>Фанаты Сервиса</h3>
-                  <p>
-                    «Фанаты Сервиса» - сообщество профессионалов и экспертов в
-                    клиентском опыте и сервисе.
-                  </p>
-                  <p>
-                    Мы используем электронные подарочные сертификаты Giftery как
-                    инструмент для повышения лояльности клиентов компаний,
-                    которые входят в сообщество.
-                  </p>
-                  <div class="d-flex justify-content-end align-items-center custom_index_block3_card_body">
-                    <p class="card-link custom_index_block3_card_link m-0 mx-3">
-                      Подробнее
-                    </p>
-
-                    <i class="bi bi-arrow-right fs-2"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="carousel-item bg-accent-colors"
-              data-bs-interval="10000"
-            >
-              <div class="container d-flex justify-content-between flex-wrap my-5">
-                <div class="mx-5">
-                  <h3>Фанаты Сервиса</h3>
-                  <p>
-                    «Фанаты Сервиса» - сообщество профессионалов и экспертов в
-                    клиентском опыте и сервисе.
-                  </p>
-                  <p>
-                    Мы используем электронные подарочные сертификаты Giftery как
-                    инструмент для повышения лояльности клиентов компаний,
-                    которые входят в сообщество.
-                  </p>
-                  <div class="d-flex justify-content-end align-items-center custom_index_block3_card_body">
-                    <p class="card-link custom_index_block3_card_link m-0 mx-3">
-                      Подробнее
-                    </p>
-
-                    <i class="bi bi-arrow-right fs-2"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="carousel-item bg-accent-colors"
-              data-bs-interval="10000"
-            >
-              <div class="container d-flex justify-content-between flex-wrap my-5">
-                <div class="mx-5">
-                  <h3>Фанаты Сервиса</h3>
-                  <p>
-                    «Фанаты Сервиса» - сообщество профессионалов и экспертов в
-                    клиентском опыте и сервисе.
-                  </p>
-                  <p>
-                    Мы используем электронные подарочные сертификаты Giftery как
-                    инструмент для повышения лояльности клиентов компаний,
-                    которые входят в сообщество.
-                  </p>
-                  <div class="d-flex justify-content-end align-items-center custom_index_block3_card_body">
-                    <p class="card-link custom_index_block3_card_link m-0 mx-3">
-                      Подробнее
-                    </p>
-
-                    <i class="bi bi-arrow-right fs-2"></i>
+              <div class="container d-flex justify-content-center flex-wrap my-5">
+                <div className={styles.div}>
+                  <div className={styles.sub_div}>
+                    <div className={styles.div_title}>
+                      <h3>Алексей</h3>
+                      <p>21 июня 2022, 21:00</p>
+                    </div>
+                    <div className={styles.div_description}>
+                      <p>
+                        Все быстро и без проблем! Спасибо за сотрудничество!!!
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
