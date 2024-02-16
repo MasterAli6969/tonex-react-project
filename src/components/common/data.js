@@ -1,6 +1,9 @@
 import tableArrow from "../../assets/img/tableArrow.svg";
 import arrowUpSquare from "../../assets/img/arrowUpSquare.png";
 import arrowDownSquare from "../../assets/img/arrowDownSquare.png";
+import tabletsBitIcon from "../../assets/img/tabletsBitIcon.png";
+import tabletsEthIcon from "../../assets/img/tabletsEthIcon.png";
+import tabletsItcIcon from "../../assets/img/tabletsItcIcon.png";
 
 export const tableCourceData = [
   {
@@ -114,5 +117,28 @@ export const tableCourceData = [
       text: "+35,74%",
     },
     reserve: "1.0060555",
+  },
+];
+
+export const tableSidebarData = [
+  {
+    id: 1,
+    img: tabletsBitIcon,
+    name: "1 BTC BitCoin",
+  },
+  {
+    id: 2,
+    img: tabletsEthIcon,
+    name: "1 ETH Etherium",
+  },
+  {
+    id: 3,
+    img: tabletsItcIcon,
+    name: "1 LTC LiteCoin",
+  },
+  {
+    id: 4,
+    img: tabletsItcIcon,
+    name: "1 COF COFEOX",
   },
 ];

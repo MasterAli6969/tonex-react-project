@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { selectItemData } from "../data";
 import styles from "./exchanger.module.scss";
 function Exchanger() {
-  const [selectAct, setSelectAct] = useState(false);
-  const handleVievSwlwct = () => {
-    setSelectAct(!selectAct);
+  const [selectAct1, setSelectAct1] = useState(false);
+  const [selectAct2, setSelectAct2] = useState(false);
+  const handleVievSwitch1 = () => {
+    setSelectAct1(!selectAct1);
+  };
+  const handleVievSwitch2 = () => {
+    setSelectAct2(!selectAct2);
   };
   return (
     <>
@@ -21,14 +25,14 @@ function Exchanger() {
                   className={styles.selector}
                   data-bs-target="selectorCoinOne"
                   type="button"
-                  onClick={handleVievSwlwct}
+                  onClick={handleVievSwitch1}
                 >
                   <div className={styles.selector_item_default}>
                     <p>Coin</p>
                   </div>
                   <ul
                     className={`${styles.selector_items} ${
-                      selectAct && styles._active
+                      selectAct1 && styles._active
                     }`}
                   >
                     {selectItemData.map((item) => {
@@ -55,14 +59,14 @@ function Exchanger() {
                   className={styles.selector}
                   data-bs-target="selectorCoinOne"
                   type="button"
-                  onClick={handleVievSwlwct}
+                  onClick={handleVievSwitch2}
                 >
                   <div className={styles.selector_item_default}>
                     <p>Coin</p>
                   </div>
                   <ul
                     className={`${styles.selector_items} ${
-                      selectAct && styles._active
+                      selectAct2 && styles._active
                     }`}
                   >
                     {selectItemData.map((item) => {

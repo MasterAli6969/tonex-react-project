@@ -2,7 +2,9 @@ import React from "react";
 import Header from "./header/Header";
 import Exchanger from "./exchanger/Exchanger";
 import Tabs from "./tabs/Tabs";
-import CourseTable from "../../common/course-table/CourseTable";
+import Tablets from "./tablets/Tablets";
+import WhyWe from "./why-we/WhyWe";
+import FeedbackSlider from "./feedback-slider/FeedbackSlider";
 function Home() {
   return (
     <>
@@ -10,7 +12,9 @@ function Home() {
         <Header />
         <Exchanger />
         <Tabs />
-        <CourseTable />
+        <Tablets />
+        <WhyWe />
+        <FeedbackSlider />
       </div>
     </>
   );

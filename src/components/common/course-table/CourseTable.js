@@ -58,7 +58,7 @@ function CourseTable() {
               })}
             </tbody>
           </table>
-          <div className="tablets__view__all">
+          <div className={styles.tablets_view_all}>
             <a href="/">Посмотреть все монеты</a>
           </div>
         </div>
