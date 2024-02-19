@@ -1,0 +1,31 @@
+.div_title {
+  margin-bottom: 5rem;
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+.sub_div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.sub_div_title {
+  font-size: 2rem;
+}
+
+.sub_div_list {
+  max-width: 905px;
+  font-size: 1.25rem;
+}
+
+.sub_div_list ol li,
+.sub_div_list ul li {
+  margin-bottom: 1rem;
+}
+
+.sub_div_list ul li h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}

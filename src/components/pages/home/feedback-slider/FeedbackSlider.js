@@ -1,11 +1,12 @@
 import React from "react";
+import { feedbackSlider } from "../data";
 import styles from "./feedback_slider.module.scss";
 function FeedbackSlider() {
   return (
     <>
       <div class="col-12 mt-5 mb-5">
-        <div class="container d-flex justify-content-center flex-wrap mb-5">
-          <h3 class="fw-bolder">Отзывы B2B-клиентов</h3>
+        <div class="container flex-wrap mb-5">
+          <h3 class="fw-bolder">Отзывы о нас</h3>
         </div>
         <div
           id="carouselExampleDark1"
@@ -34,26 +35,38 @@ function FeedbackSlider() {
             ></button>
           </div>
           <div class="carousel-inner">
-            <div
-              class="carousel-item active bg-accent-colors"
-              data-bs-interval="10000"
-            >
-              <div class="container d-flex justify-content-center flex-wrap my-5">
-                <div className={styles.div}>
-                  <div className={styles.sub_div}>
-                    <div className={styles.div_title}>
-                      <h3>Алексей</h3>
-                      <p>21 июня 2022, 21:00</p>
+            {feedbackSlider.length != 0 &&
+              feedbackSlider.map((item) => {
+                return (
+                  <>
+                    <div
+                      key={item.id}
+                      class={`carousel-item ${item.activeClass} bg-accent-colors`}
+                      data-bs-interval="10000"
+                    >
+                      <div class="container d-flex justify-content-center flex-wrap my-5">
+                        {item.sledes.map((item) => {
+                          return (
+                            <>
+                              <div key={item.id} className={styles.div}>
+                                <div className={styles.sub_div}>
+                                  <div className={styles.div_title}>
+                                    <h3>{item.name}</h3>
+                                    <p>{item.date}</p>
+                                  </div>
+                                  <div className={styles.div_description}>
+                                    <p>{item.feedback}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </>
+                          );
+                        })}
+                      </div>
                     </div>
-                    <div className={styles.div_description}>
-                      <p>
-                        Все быстро и без проблем! Спасибо за сотрудничество!!!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                  </>
+                );
+              })}
           </div>
           <button
             class="carousel-control-prev"

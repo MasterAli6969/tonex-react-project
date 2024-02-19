@@ -1,0 +1,22 @@
+.div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  background: linear-gradient(to right, #26b9f9, #1346fe);
+  padding: 2rem 0 2rem 0;
+  .div_logo {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .div_footer_link {
+    h6 {
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sub_div {
+    max-width: 527px;
+    max-height: 205px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 2rem;
+    padding: 3rem 1rem 3rem 2rem;
+    .div_title {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
