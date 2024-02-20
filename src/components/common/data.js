@@ -4,6 +4,31 @@ import arrowDownSquare from "../../assets/img/arrowDownSquare.png";
 import tabletsBitIcon from "../../assets/img/tabletsBitIcon.png";
 import tabletsEthIcon from "../../assets/img/tabletsEthIcon.png";
 import tabletsItcIcon from "../../assets/img/tabletsItcIcon.png";
+import bitcoin1 from "../../assets/img/bitcoin1.png";
+import usdt2 from "../../assets/img/usdt2.png";
+
+export const selectItemData = [
+  {
+    id: 1,
+    img: bitcoin1,
+    text: "BTC",
+  },
+  {
+    id: 2,
+    img: usdt2,
+    text: "USDT",
+  },
+  {
+    id: 3,
+    img: bitcoin1,
+    text: "BTC",
+  },
+  {
+    id: 4,
+    img: usdt2,
+    text: "USDT",
+  },
+];
 
 export const tableCourceData = [
   {

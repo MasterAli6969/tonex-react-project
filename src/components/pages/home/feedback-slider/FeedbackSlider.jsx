@@ -35,7 +35,7 @@ function FeedbackSlider() {
             ></button>
           </div>
           <div class="carousel-inner">
-            {feedbackSlider.length != 0 &&
+            {feedbackSlider.length !== 0 &&
               feedbackSlider.map((item) => {
                 return (
                   <>

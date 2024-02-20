@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header/Header";
-import Exchanger from "./exchanger/Exchanger";
+import ExchangerHeader from "./exchanger-header/ExchangerHeader";
 import Tabs from "./tabs/Tabs";
 import Tablets from "./tablets/Tablets";
 import WhyWe from "./why-we/WhyWe";
@@ -10,7 +10,7 @@ function Home() {
     <>
       <div class="row">
         <Header />
-        <Exchanger />
+        <ExchangerHeader />
         <Tabs />
         <Tablets />
         <WhyWe />

@@ -1,0 +1,60 @@
+.form {
+  background-color: #f8f8fc;
+  padding: 5rem;
+  .div_title {
+    margin-bottom: 3rem;
+    h4 {
+      font-size: 2.25rem;
+    }
+  }
+  .sub_div_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .div_input_data {
+      p {
+        font-size: 1.25rem;
+      }
+      .div_input_data_item {
+        display: flex;
+        margin-top: 2rem;
+        .coin_div {
+          display: flex;
+          align-items: center;
+          background-color: white;
+          border-radius: 10px 0 0 10px;
+          border-right: 2px solid #f8f8fc;
+          padding: 0.5rem;
+          p {
+            font-size: 1.25;
+            margin-left: 0.4rem;
+          }
+        }
+        input {
+          width: 250px;
+          height: 45px;
+          border: none;
+          border-radius: 0 10px 10px 0;
+        }
+      }
+      .min_max {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        p {
+          font-size: 0.75rem;
+          margin-left: 0.25rem;
+        }
+      }
+    }
+    .change_arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
