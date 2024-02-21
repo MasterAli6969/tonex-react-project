@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { selectItemData } from "../data";
 import styles from "./exchanger.module.scss";
 function Exchanger() {
@@ -83,7 +84,9 @@ function Exchanger() {
             </div>
           </div>
         </div>
-        <button class={styles.form_button}>Обменять</button>
+        <Link to="/exchange-destinations">
+          <button class={styles.form_button}>Обменять</button>
+        </Link>
       </form>
     </>
   );

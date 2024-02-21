@@ -1,0 +1,22 @@
+.sub_div {
+  border-radius: 10px;
+  padding: 3.5rem 1rem 3.5rem 1rem;
+  margin-bottom: 1.3rem;
+  .sub_div_item {
+    display: flex;
+    i {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+._line_background_blue {
+  background: linear-gradient(to right, #26b9f9, #2752e7);
+  color: white;
+}
+
+._line_background_wheat {
+  background: #f8f8fc;
+  color: black;
+}
