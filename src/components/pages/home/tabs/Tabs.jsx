@@ -1,4 +1,3 @@
-import React from "react";
 import { tabsData } from "../data";
 import styles from "./tabs.module.scss";
 function Tabs() {

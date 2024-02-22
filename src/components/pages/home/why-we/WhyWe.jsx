@@ -1,4 +1,3 @@
-import React from "react";
 import tabsCoinTree from "../../../../assets/img/tabsCoinTree.png";
 import tabsManeyCoin from "../../../../assets/img/tabsManeyCoin.png";
 import styles from "./why_we.module.scss";

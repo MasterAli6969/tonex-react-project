@@ -1,4 +1,3 @@
-import React from "react";
 import { infoTabsData } from "../data";
 import styles from "./info_tabs.module.scss";
 function InfoTabs() {
@@ -18,7 +17,7 @@ function InfoTabs() {
                   }`}
                 >
                   <div className={`${styles.sub_div_item}`}>
-                    <i class={item.icon} />
+                    <i className={item.icon} />
                     <p>{item.text}</p>
                   </div>
                 </div>

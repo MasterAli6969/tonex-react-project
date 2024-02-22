@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { tableSidebarData } from "../data";
 import styles from "./table_sidebar.module.scss";
 

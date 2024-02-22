@@ -1,4 +1,3 @@
-import React from "react";
 import Exchanger from "../../../common/exchanger/Exchanger";
 function ExchangerHeader() {
   return (

@@ -1,13 +1,14 @@
-import React from "react";
 import { regulationsData } from "./data";
 import styles from "./regulations.module.scss";
 function Regulations() {
   return (
     <>
-      <div className="col-12">
-        <div className={styles.div}>
+      <div className={styles.div}>
+        <div className="col-12">
           <div className={styles.div_title}>
-            <h1>Регламент создания и обработки заявок </h1>
+            <h1>
+              Регламент создания и <br /> обработки заявок{" "}
+            </h1>
           </div>
           {regulationsData.length !== 0 &&
             regulationsData.map((item) => {
@@ -15,7 +16,7 @@ function Regulations() {
                 <div key={item.id} className={styles.sub_div}>
                   <div className={styles.sub_div_title}>
                     <h1>{item.number}</h1>
-                    <p>{item.name}</p>
+                    <h4>{item.name}</h4>
                   </div>
                   <div className={styles.sub_div_list}>
                     {item.description && <p>{item.description}</p>}

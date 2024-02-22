@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { selectItemData } from "../data";
 import styles from "./exchanger.module.scss";
@@ -85,7 +85,7 @@ function Exchanger() {
           </div>
         </div>
         <Link to="/exchange-destinations">
-          <button class={styles.form_button}>Обменять</button>
+          <button className={styles.form_button}>Обменять</button>
         </Link>
       </form>
     </>

@@ -1,4 +1,3 @@
-import React from "react";
 import Exchanger from "../../common/exchanger/Exchanger";
 import ExchangeRequest from "./exchange-request/ExchangeRequest";
 import styles from "./exchange_destinations.module.scss";
@@ -7,7 +6,7 @@ function ExchangeDestinations() {
   return (
     <>
       <div className={styles.div}>
-        <div class="row">
+        <div className="row">
           <div className="col-12">
             <div className={styles.div_title}>
               <h1>Направления обмена</h1>

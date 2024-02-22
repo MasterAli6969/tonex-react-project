@@ -1,4 +1,3 @@
-import React from "react";
 import bitcoin1 from "../../../../assets/img/bitcoin1.png";
 import usdt2 from "../../../../assets/img/usdt2.png";
 import styles from "./exchange_request.module.scss";
@@ -20,12 +19,12 @@ function ExchangeRequest() {
               <input type="text" />
             </div>
             <div className={styles.min_max}>
-              <i class="bi bi-info-circle" />
+              <i className="bi bi-info-circle" />
               <p>Min = 0,002 ; Max = 1,006</p>
             </div>
           </div>
           <div className={styles.change_arrow}>
-            <i class="bi bi-arrow-left-right" />
+            <i className="bi bi-arrow-left-right" />
           </div>
           <div className={styles.div_input_data}>
             <h4>Вы получите USDT </h4>
@@ -37,7 +36,7 @@ function ExchangeRequest() {
               <input type="text" />
             </div>
             <div className={styles.min_max}>
-              <i class="bi bi-info-circle" />
+              <i className="bi bi-info-circle" />
               <p>Резерв 25000,07865</p>
             </div>
           </div>
@@ -51,7 +50,7 @@ function ExchangeRequest() {
             <h4>Email</h4>
             <input type="text" placeholder="Введите email" />
             <div className={styles.mail_description}>
-              <i class="bi bi-info-circle" />
+              <i className="bi bi-info-circle" />
               <p>
                 Email должен отправлять и принимать письма, <br />
                 иначе общение по заявке будет невозможно
@@ -91,7 +90,7 @@ function ExchangeRequest() {
           />
           <label
             className="form-check-label mt-2"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
             style={{ fontSize: "0.75rem" }}
           >
             Принимаю пользовательское соглашение и KYC/AML/KYT

@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./header/Header";
 import ExchangerHeader from "./exchanger-header/ExchangerHeader";
 import Tabs from "./tabs/Tabs";
@@ -8,7 +7,7 @@ import FeedbackSlider from "./feedback-slider/FeedbackSlider";
 function Home() {
   return (
     <>
-      <div class="row">
+      <div className="row">
         <Header />
         <ExchangerHeader />
         <Tabs />

@@ -1,23 +1,22 @@
-import React from "react";
 import { feedbackSlider } from "../data";
 import styles from "./feedback_slider.module.scss";
 function FeedbackSlider() {
   return (
     <>
-      <div class="col-12 mt-5 mb-5">
-        <div class="container flex-wrap mb-5">
-          <h3 class="fw-bolder">Отзывы о нас</h3>
+      <div className="col-12 mt-5 mb-5">
+        <div className="container flex-wrap mb-5">
+          <h3 className="fw-bolder">Отзывы о нас</h3>
         </div>
         <div
           id="carouselExampleDark1"
-          class="carousel carousel-dark slide mb-5"
+          className="carousel carousel-dark slide mb-5"
         >
-          <div class="carousel-indicators">
+          <div className="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleDark1"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -34,17 +33,17 @@ function FeedbackSlider() {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner">
+          <div className="carousel-inner">
             {feedbackSlider.length !== 0 &&
               feedbackSlider.map((item) => {
                 return (
                   <>
                     <div
                       key={item.id}
-                      class={`carousel-item ${item.activeClass} bg-accent-colors`}
+                      className={`carousel-item ${item.activeClass} bg-accent-colors`}
                       data-bs-interval="10000"
                     >
-                      <div class="container d-flex justify-content-center flex-wrap my-5">
+                      <div className="container d-flex justify-content-center flex-wrap my-5">
                         {item.sledes.map((item) => {
                           return (
                             <>
@@ -69,28 +68,34 @@ function FeedbackSlider() {
               })}
           </div>
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleDark1"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleDark1"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="container d-flex justify-content-around flex-wrap">
+        <div className="container d-flex justify-content-around flex-wrap">
           <a
             href="/"
-            class="btn btn-light btn-lg rounded-5 accent-colors text-accent-colors"
+            className="btn btn-light btn-lg rounded-5 accent-colors text-accent-colors"
           >
             Читать другие отзывы
           </a>

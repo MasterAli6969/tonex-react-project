@@ -1,11 +1,10 @@
-import React from "react";
 import CourseTable from "../../../common/course-table/CourseTable";
 import TableSidebar from "../../../common/table-sidebar/TableSidebar";
 import styles from "./tablets.module.scss";
 function Tablets() {
   return (
     <>
-      <div class={styles.div}>
+      <div className={styles.div}>
         <div className={styles.sub_div}>
           <h1>Курсы обмена</h1>
           <p>

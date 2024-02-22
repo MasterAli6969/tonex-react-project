@@ -1,4 +1,3 @@
-import React from "react";
 import { tableCourceData } from "../data";
 import styles from "./course_table.module.scss";
 function CourseTable() {
