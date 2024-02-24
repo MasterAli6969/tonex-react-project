@@ -1,6 +1,8 @@
+import CustomInput from "../../../common/ui-ux/input/CustomInput";
 import bitcoin1 from "../../../../assets/img/bitcoin1.png";
 import usdt2 from "../../../../assets/img/usdt2.png";
 import styles from "./exchange_request.module.scss";
+import CustomButton from "../../../common/ui-ux/button/CustomButton";
 function ExchangeRequest() {
   return (
     <>
@@ -16,7 +18,7 @@ function ExchangeRequest() {
                 <img src={bitcoin1} alt="" />
                 <p>BTC</p>
               </div>
-              <input type="text" />
+              <CustomInput type={"text"} />
             </div>
             <div className={styles.min_max}>
               <i className="bi bi-info-circle" />
@@ -33,7 +35,7 @@ function ExchangeRequest() {
                 <img src={usdt2} alt="" />
                 <p>USDT</p>
               </div>
-              <input type="text" />
+              <CustomInput type={"text"} />
             </div>
             <div className={styles.min_max}>
               <i className="bi bi-info-circle" />
@@ -43,12 +45,12 @@ function ExchangeRequest() {
         </div>
         <div className={styles.sub_div_2}>
           <h4>Номер кошелька</h4>
-          <input type="text" />
+          <CustomInput type={"text"} />
         </div>
         <div className={styles.sub_div_3}>
           <div className={styles.mail}>
             <h4>Email</h4>
-            <input type="text" placeholder="Введите email" />
+            <CustomInput type={"text"} placeholder={"Введите email"} />
             <div className={styles.mail_description}>
               <i className="bi bi-info-circle" />
               <p>
@@ -79,7 +81,7 @@ function ExchangeRequest() {
             <button className={styles.button}>Войти в личный кабинет</button>
           </div>
         </div>
-        <button className={styles.form_button}>Обменять</button>
+        <CustomButton text={"Обменять"} />
         <div className="form-check my-4 d-flex align-items-center">
           <input
             className="form-check-input mt-2"

@@ -1,0 +1,14 @@
+.div {
+  padding: 2rem 0 2rem 0;
+  .div_list {
+    .list_item {
+      cursor: pointer;
+      border-radius: 0 10px 10px 0;
+      padding: 2rem;
+    }
+    ._active {
+      background-color: #2752e7;
+      color: white;
+    }
+  }
+}

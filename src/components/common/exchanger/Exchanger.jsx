@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { selectItemData } from "../data";
+import CustomInput from "../ui-ux/input/CustomInput";
+import CustomButton from "../ui-ux/button/CustomButton";
 import styles from "./exchanger.module.scss";
 function Exchanger() {
   const [selectAct1, setSelectAct1] = useState(false);
@@ -19,7 +21,7 @@ function Exchanger() {
             <p className={styles.sub_div_title}>Отдаете</p>
             <div className={styles.sub_div_data}>
               <div>
-                <input className={styles.sub_div_data_input} type="text" />
+                <CustomInput type={"text"} />
               </div>
               <div
                 className={styles.selector}
@@ -53,7 +55,7 @@ function Exchanger() {
             <p className={styles.sub_div_title}>Получаете</p>
             <div className={styles.sub_div_data}>
               <div>
-                <input className={styles.sub_div_data_input} type="text" />
+                <CustomInput type={"text"} />
               </div>
               <div
                 className={styles.selector}
@@ -85,7 +87,7 @@ function Exchanger() {
           </div>
         </div>
         <Link to="/exchange-destinations">
-          <button className={styles.form_button}>Обменять</button>
+          <CustomButton text={"Обменять"} />
         </Link>
       </form>
     </>

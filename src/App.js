@@ -7,6 +7,8 @@ import ExchangeDestinations from "./components/pages/exchange-destinations/Excha
 import SearchingForTransaction from "./components/pages/searching-for-transaction/SearchingForTransaction";
 import Faq from "./components/pages/faq/Faq";
 import KycAml from "./components/pages/kyc-aml/KycAml";
+import Contacts from "./components/pages/contacts/Contacts";
+import Profile from "./components/pages/profile/Profile";
 import "./App.css";
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
               />
               <Route path="/faq" element={<Faq />} />
               <Route path="/kyc-aml" element={<KycAml />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/profile" element={<Profile />} />
             </Routes>
           </div>
         </div>
