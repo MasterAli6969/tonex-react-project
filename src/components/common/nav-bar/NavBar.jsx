@@ -1,80 +1,89 @@
-import CryptoneXNavLogo from "../../../assets/img/CryptoneXNavLogo.png";
-function NavBar() {
+function NavBar({
+  classColorText,
+  classColorButtonSelect,
+  classColorButtonLogin,
+  logo,
+}) {
   return (
     <>
-      <nav className="navbar navbar-expand-lg pt-5 mb-5">
-        <div className="container-fluid d-flex justify-content-center flex-wrap">
-          <img src={CryptoneXNavLogo} alt="" />
+      <nav
+        className={`navbar navbar-expand-lg navbar-transparent pt-5 mb-5 ${classColorText}`}
+      >
+        <div className="container-fluid ">
+          <img src={logo} />
           <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarDefault"
+            aria-controls="navbarDefault"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div
-            className="collapse navbar-collapse d-flex justify-content-center"
-            id="navbarSupportedContent"
-          >
-            <ul className="navbar-nav">
+          <div className="collapse navbar-collapse" id="navbarDefault">
+            <ul className="navbar-nav  me-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">
                   Проверить
                 </a>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="/">
+                <a className="nav-link active" href="/">
                   Правила
                 </a>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="/">
+                <a className="nav-link active" href="/">
                   Помощь
                 </a>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="/contacts">
+                <a className="nav-link active" href="/contacts">
                   Контакты
                 </a>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="/">
+                <a className="nav-link active" href="/contacts">
+                  Контакты
+                </a>
+              </li>
+              <li className="nav-item mx-3">
+                <a className="nav-link active" href="/">
                   KYC/AML
                 </a>
               </li>
             </ul>
-          </div>
-          <div>
-            <div className="btn-group">
-              <div
-                className="btn btn-sm border border-dark rounded d-flex align-items-center mx-3"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <div>
-                  <img src="/img/Vector-lang.svg" alt="" />
+            <div>
+              <div className="btn-group">
+                <div
+                  className={`btn btn-sm border border-dark rounded d-flex align-items-center mx-3 ${classColorButtonSelect}`}
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div>
+                    <img src="/img/Vector-lang.svg" alt="" />
+                  </div>
+                  <div>RU</div>
                 </div>
-                <div>RU</div>
+                <ul className="dropdown-menu">...</ul>
               </div>
-              <ul className="dropdown-menu">...</ul>
             </div>
-          </div>
-          <div>
-            <button
-              className="btn btn-sm border border-primary rounded"
-              type="submit"
-            >
-              Search
-            </button>
+            <div>
+              <button
+                className={`btn btn-sm border border-primary rounded px-3 ${classColorButtonLogin}`}
+                type="submit"
+              >
+                Вход
+              </button>
+            </div>
           </div>
         </div>
       </nav>
     </>
   );
 }
+
 export default NavBar;

@@ -9,16 +9,24 @@ function CourseTable() {
             <thead>
               <tr className={styles.thead_title}>
                 <th>
-                  <div>Вы получаете</div>
+                  <div>
+                    <p>Вы получаете</p>
+                  </div>
                 </th>
                 <th>
-                  <div>Курс</div>
+                  <div>
+                    <p>Курс</p>
+                  </div>
                 </th>
                 <th>
-                  <div>Изменение (24 ч.)</div>
+                  <div>
+                    <p>Изменение (24 ч.)</p>
+                  </div>
                 </th>
                 <th>
-                  <div>Резерв</div>
+                  <div>
+                    <p>Резерв</p>
+                  </div>
                 </th>
               </tr>
             </thead>
@@ -58,7 +66,9 @@ function CourseTable() {
             </tbody>
           </table>
           <div className={styles.tablets_view_all}>
-            <a href="/">Посмотреть все монеты</a>
+            <a href="/">
+              <p>Посмотреть все монеты</p>
+            </a>
           </div>
         </div>
       </div>

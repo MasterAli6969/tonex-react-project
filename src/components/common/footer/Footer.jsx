@@ -1,11 +1,12 @@
+import CryptoneXNavLogoWhite from "../../../assets/img/CryptoneXNavLogoWhite.png";
 import styles from "./footer.module.scss";
 function Footer() {
   return (
     <>
       <div className="col-12">
         <div className={styles.div}>
-          <div className={styles.div_logo}>
-            <h1>CryptoneX</h1>
+          <div>
+            <img src={CryptoneXNavLogoWhite} />
           </div>
           <div className={styles.div_footer_link}>
             <ul>

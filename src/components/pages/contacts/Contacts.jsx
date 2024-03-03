@@ -1,10 +1,13 @@
 import { contactsData } from "./data";
 import CustomInput from "../../common/ui-ux/input/CustomInput";
 import CustomButton from "../../common/ui-ux/button/CustomButton";
+import NavBar from "../../common/nav-bar/NavBar";
+import CryptoneXNavLogo from "../../../assets/img/CryptoneXNavLogo.png";
 import styles from "./contacts.module.scss";
 function Contacts() {
   return (
     <>
+      <NavBar logo={CryptoneXNavLogo} />
       <div className={styles.div}>
         <div className="row">
           <div className="col-md-6 col-sm-12">

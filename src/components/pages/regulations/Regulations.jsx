@@ -1,8 +1,11 @@
 import { regulationsData } from "./data";
+import NavBar from "../../common/nav-bar/NavBar";
+import CryptoneXNavLogo from "../../../assets/img/CryptoneXNavLogo.png";
 import styles from "./regulations.module.scss";
 function Regulations() {
   return (
     <>
+      <NavBar logo={CryptoneXNavLogo} />
       <div className={styles.div}>
         <div className="row">
           <div className="col-12">

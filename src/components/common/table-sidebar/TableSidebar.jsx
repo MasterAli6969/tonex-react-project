@@ -19,7 +19,6 @@ function TableSidebar() {
         <div className={styles.div_title}>
           <p>Токен</p>
         </div>
-
         <ul>
           {tableSidebarData.length !== 0 && (
             <>

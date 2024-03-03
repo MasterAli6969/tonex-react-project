@@ -1,3 +1,30 @@
 .container__page__global {
   padding: 0 7% 0 7%;
+  background-color: white;
+}
+
+.container__page__global_blue {
+  background-color: #2752e7;
+}
+
+h1 {
+  color: #2752e7;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+h4 {
+  color: black;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+h2 {
+  color: #2752e7;
+  font-weight: 500;
+  font-size: 3.4rem;
+}
+
+p {
+  font-size: 1.25rem;
 }

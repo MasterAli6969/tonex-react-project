@@ -1,0 +1,40 @@
+.div {
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .sub_div {
+    display: flex;
+    align-items: center;
+    .add_wallet {
+      background-color: white;
+      padding: 4rem 3rem 4rem 3rem;
+      margin-right: 3rem;
+      border-radius: 10px;
+      p {
+        opacity: 0.7;
+      }
+    }
+    .my_wallets {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        img {
+          margin-right: 1rem;
+        }
+        h4 {
+          font-weight: 500;
+        }
+      }
+      h4 {
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

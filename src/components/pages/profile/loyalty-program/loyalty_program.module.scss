@@ -1,0 +1,85 @@
+.div {
+  padding: 4rem 0 4rem 0;
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .sub_div {
+    display: flex;
+    flex-wrap: wrap;
+    .sub_div_loyalty {
+      width: 277px;
+      border-radius: 10px;
+      background-color: #2752e7;
+      color: white;
+      padding: 1rem;
+      margin-right: 4rem;
+      .loyalty_laval {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 1rem;
+        img {
+          margin-right: 1rem;
+        }
+      }
+      .loyalty_info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        > div {
+          p {
+            font-size: 0.6rem;
+            margin-bottom: 0.4rem;
+          }
+          h6 {
+            font-size: 1.12rem;
+            font-weight: 500;
+          }
+        }
+        div:first-child {
+          margin-right: 4.5rem;
+        }
+      }
+      .loyalty_filling {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        z-index: -1;
+        div {
+          width: 60%;
+          height: 3px;
+          border-radius: 5px;
+          background-color: #00b69b;
+          z-index: 999;
+        }
+      }
+      .loyalty_filling_value {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        p {
+          font-size: 0.5rem;
+        }
+      }
+    }
+    .sub_div_lists {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 7rem 2rem 0;
+        }
+      }
+    }
+  }
+}

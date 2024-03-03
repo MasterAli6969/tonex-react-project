@@ -1,8 +1,11 @@
+import NavBar from "../../common/nav-bar/NavBar";
+import CryptoneXNavLogo from "../../../assets/img/CryptoneXNavLogo.png";
 import { faqDataAccor } from "./data";
 import styles from "./faq.module.scss";
 function Faq() {
   return (
     <>
+      <NavBar logo={CryptoneXNavLogo} />
       <div className={styles.div}>
         <div className="row">
           <div className="col-12">

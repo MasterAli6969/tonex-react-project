@@ -1,10 +1,13 @@
 import Exchanger from "../../common/exchanger/Exchanger";
 import ExchangeRequest from "./exchange-request/ExchangeRequest";
+import NavBar from "../../common/nav-bar/NavBar";
+import CryptoneXNavLogo from "../../../assets/img/CryptoneXNavLogo.png";
 import styles from "./exchange_destinations.module.scss";
 import InfoTabs from "./info-tabs/InfoTabs";
 function ExchangeDestinations() {
   return (
     <>
+      <NavBar logo={CryptoneXNavLogo} />
       <div className={styles.div}>
         <div className="row">
           <div className="col-12">
