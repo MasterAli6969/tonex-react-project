@@ -25,7 +25,6 @@ h1 {
 }
 
 h4,
-h2,
 p {
   font-family: 'Manrope', sans-serif;
 }
@@ -33,10 +32,11 @@ p {
 h4 {
   color: black;
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h2 {
+  font-family: 'Actay Wide', sans-serif;
   color: #2752e7;
   font-weight: 500;
   font-size: 3.4rem;

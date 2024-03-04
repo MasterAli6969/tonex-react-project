@@ -13,12 +13,12 @@ function Tablets() {
         </div>
       </div>
       <div className={styles.div_title}>
-        <p>Продажа криптовалюты</p>
+        <h4>Продажа криптовалюты</h4>
       </div>
       <TableSidebar />
       <CourseTable />
       <div className={styles.div_title}>
-        <p>Покупка Криптовалюты</p>
+        <h4>Покупка Криптовалюты</h4>
       </div>
       <TableSidebar />
       <CourseTable />

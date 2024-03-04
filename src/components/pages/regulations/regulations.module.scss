@@ -14,8 +14,7 @@
     padding: 2rem 3rem 2rem 3rem;
     margin-bottom: 5rem;
     div:first-child {
-      h1,
-      h4 {
+      h1 {
         font-size: 2rem;
         margin-bottom: 1rem;
         font-weight: 500;
@@ -23,17 +22,22 @@
     }
     div:last-child {
       max-width: 56.5rem;
-      ol li,
+      ol,
+      ul {
+        a {
+          color: #1a6dfd;
+        }
+      }
+      ul ol li,
       ul li {
         margin-bottom: 3rem;
-        font-size: 1.25rem;
       }
-      ul li h1 {
-        font-weight: 500;
+      ul li h4 {
         margin-bottom: 1rem;
       }
       p {
         font-size: 1.25rem;
+        line-height: 1.3rem;
         margin-bottom: 3rem;
       }
     }

@@ -11,7 +11,7 @@ function Regulations() {
           <div className="col-12">
             <div className={styles.div_title}>
               <h1>
-                Регламент создания и <br /> обработки заявок{" "}
+                Регламент создания <br /> и обработки заявок{" "}
               </h1>
             </div>
             {regulationsData.length !== 0 &&
@@ -29,7 +29,11 @@ function Regulations() {
                           item.itemsOl.map((subItem) => {
                             return (
                               <li key={subItem.id}>
-                                <p>{subItem.text}</p>
+                                <p
+                                  dangerouslySetInnerHTML={{
+                                    __html: subItem.text,
+                                  }}
+                                ></p>
                               </li>
                             );
                           })}
@@ -39,7 +43,13 @@ function Regulations() {
                           item.itemsUl.map((subItem) => {
                             return (
                               <li key={subItem.id}>
-                                {subItem.title && <h4>{subItem.title}</h4>}
+                                {subItem.title && (
+                                  <h4
+                                    dangerouslySetInnerHTML={{
+                                      __html: subItem.title,
+                                    }}
+                                  ></h4>
+                                )}
                                 <p>{subItem.text}</p>
                               </li>
                             );

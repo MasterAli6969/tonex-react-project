@@ -4,8 +4,8 @@ function FeedbackSlider() {
   return (
     <>
       <div className="col-12 mt-5 mb-5">
-        <div className="container flex-wrap mb-5">
-          <h3 className="fw-bolder">Отзывы о нас</h3>
+        <div className="">
+          <h2 className="fw-bolder">Отзывы о нас</h2>
         </div>
         <div
           id="carouselExampleDark1"
@@ -93,11 +93,8 @@ function FeedbackSlider() {
           </button>
         </div>
         <div className="container d-flex justify-content-around flex-wrap">
-          <a
-            href="/"
-            className="btn btn-light btn-lg rounded-5 accent-colors text-accent-colors"
-          >
-            Читать другие отзывы
+          <a href="/" className="btn btn-primary btn-lg rounded-5">
+            Посмотреть все отзывы на bestchange.ru
           </a>
         </div>
       </div>

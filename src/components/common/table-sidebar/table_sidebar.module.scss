@@ -9,12 +9,12 @@
   }
   ul {
     .li_item {
-      margin-right: 3rem;
+      margin-right: 7rem;
       div {
         display: flex;
         align-items: center;
         cursor: pointer;
-        padding: 1rem 0 1rem 1rem;
+        padding: 1.5rem 0 1.5rem 1rem;
         img {
           margin-right: 1rem;
         }
@@ -23,6 +23,7 @@
     ._li_item_active {
       border-radius: 0 10px 10px 0;
       background-color: #2752e7;
+      color: white;
     }
   }
 }
