@@ -9,7 +9,8 @@ function Exchanger() {
   const [selectAct2, setSelectAct2] = useState(false);
   const [selectedItem1, setSelectedItem1] = useState(null);
   const [selectedItem2, setSelectedItem2] = useState(null);
-
+  const [rotate1, setRotate1] = useState(false);
+  const [rotate2, setRotate2] = useState(false);
   useEffect(() => {
     if (
       !selectedItem1 &&
@@ -24,10 +25,12 @@ function Exchanger() {
 
   const handleVievSwitch1 = () => {
     setSelectAct1(!selectAct1);
+    setRotate1(!rotate1);
   };
 
   const handleVievSwitch2 = () => {
     setSelectAct2(!selectAct2);
+    setRotate2(!rotate2);
   };
 
   const handleItemClick1 = (item) => {
@@ -58,6 +61,11 @@ function Exchanger() {
                     <>
                       <img src={selectedItem1.img} alt={selectedItem1.text} />
                       <p>{selectedItem1.text}</p>
+                      <i
+                        className={`${
+                          rotate1 ? styles._rotate : ""
+                        } bi bi-chevron-down`}
+                      />
                     </>
                   )}
                 </div>
@@ -76,6 +84,7 @@ function Exchanger() {
               </div>
             </div>
           </div>
+          <div className={styles.line} />
           <div className={styles.sub_div}>
             <p>Получаете</p>
             <div className={styles.sub_div_data}>
@@ -93,6 +102,11 @@ function Exchanger() {
                     <>
                       <img src={selectedItem2.img} alt={selectedItem2.text} />
                       <p>{selectedItem2.text}</p>
+                      <i
+                        className={`${
+                          rotate2 ? styles._rotate : ""
+                        } bi bi-chevron-down`}
+                      />
                     </>
                   )}
                 </div>

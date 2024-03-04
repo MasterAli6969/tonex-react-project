@@ -9,13 +9,13 @@ function Tabs() {
             return (
               <>
                 <div key={item.id} className={styles.sub_div}>
-                  <div className={styles.sub_div_item}>
+                  <div>
                     <p>
                       {item.text1} <br />
                       {item.text2}
                     </p>
                   </div>
-                  <img className={styles.sub_div_img} src={item.img} alt="" />
+                  <img src={item.img} alt="" />
                 </div>
               </>
             );

@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Actay Wide';
+  src: url('/src/assets/fonts/Actay-Wide-Bd/actaywide-bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/src/assets/fonts/Manrope/static/Manrope-Regular.ttf') format('truetype');
+}
+
 .container__page__global {
   padding: 0 7% 0 7%;
   background-color: white;
@@ -8,9 +18,16 @@
 }
 
 h1 {
+  font-family: 'Actay Wide', sans-serif;
   color: #2752e7;
   font-weight: 500;
   font-size: 5rem;
+}
+
+h4,
+h2,
+p {
+  font-family: 'Manrope', sans-serif;
 }
 
 h4 {

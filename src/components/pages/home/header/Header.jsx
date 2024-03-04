@@ -4,11 +4,9 @@ function Header() {
     <>
       <div className="col-md-6 col-sm-12">
         <div className={styles.header}>
-          <h1 className={styles.header__title}>
-            Самый быстрый сервис обмена цифровых валют
-          </h1>
-          <p className={styles.header__description}>
-            Покупай, продавай обменивай и храни криптовалюты на «горячих
+          <h1>Самый быстрый сервис обмена цифровых валют</h1>
+          <p>
+            Покупай, продавай обменивай и храни <br /> криптовалюты на «горячих
             кошельках»
           </p>
         </div>
@@ -16,5 +14,4 @@ function Header() {
     </>
   );
 }
-
 export default Header;

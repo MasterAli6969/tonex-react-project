@@ -1,70 +1,70 @@
-.div_title {
-  h1 {
-    font-size: 3.4rem;
-    margin: 3rem 0 3rem 0;
-  }
-}
-
-.sub_global_div {
-  display: flex;
-  justify-content: space-between;
-  .sub_div_right {
-    position: relative;
-    max-width: 527px;
-    height: 472px;
-    background-color: #f8f8fc;
-    border-radius: 20px;
-    img {
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
-      max-width: 100%;
-      height: auto;
+.div {
+  .div_title {
+    h1 {
+      font-size: 3.4rem;
+      margin: 3rem 0 3rem 0;
     }
   }
-}
-
-.sub_div_left {
-  display: block;
-  .sub_div_left_top {
+  .sub_div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    .sub_div_left_top_item {
-      max-width: 526px;
-      height: 226px;
+    .sub_div_right {
+      position: relative;
+      max-width: 33rem;
+      height: 29.5rem;
       background-color: #f8f8fc;
       border-radius: 20px;
-      margin-right: 1rem;
+      img {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
-  .sub_div_left_bottom {
-    position: relative;
-    max-width: 1073px;
-    height: 226px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #f8f8fc;
-    border-radius: 20px;
-    margin-top: 1.5rem;
-    img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      max-width: 100%;
-      height: auto;
+  .sub_div_left {
+    display: block;
+    > div:first-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      > div {
+        max-width: 32.8rem;
+        height: 14.1rem;
+        background-color: #f8f8fc;
+        border-radius: 20px;
+        margin-right: 1rem;
+      }
+    }
+    > div:last-child {
+      position: relative;
+      max-width: 67rem;
+      height: 14.1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #f8f8fc;
+      border-radius: 20px;
+      margin-top: 1.5rem;
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
-}
 
-.title {
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 2rem 0 2rem 2rem;
-}
+  .title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2rem 0 2rem 2rem;
+  }
 
-.description {
-  margin-left: 2rem;
+  .description {
+    margin-left: 2rem;
+  }
 }

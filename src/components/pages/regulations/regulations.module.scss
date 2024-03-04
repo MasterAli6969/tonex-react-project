@@ -1,46 +1,41 @@
-.div_title {
-  margin-bottom: 5rem;
-  text-align: center;
-  h1 {
-    font-size: 5rem;
-    font-weight: 500;
+.div {
+  .div_title {
+    margin-bottom: 5rem;
+    text-align: center;
+    h1 {
+      font-size: 5rem;
+      font-weight: 500;
+    }
   }
-}
-
-.sub_div {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f8f8fc;
-  padding: 2rem 3rem 2rem 3rem;
-  margin-bottom: 5rem;
-  h1,
-  h4 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
+  .sub_div {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8fc;
+    padding: 2rem 3rem 2rem 3rem;
+    margin-bottom: 5rem;
+    div:first-child {
+      h1,
+      h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+    }
+    div:last-child {
+      max-width: 56.5rem;
+      ol li,
+      ul li {
+        margin-bottom: 3rem;
+        font-size: 1.25rem;
+      }
+      ul li h1 {
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+      }
+    }
   }
-}
-
-.sub_div_title {
-  font-size: 2rem;
-}
-
-.sub_div_list {
-  max-width: 905px;
-}
-
-.sub_div_list ol li,
-.sub_div_list ul li {
-  margin-bottom: 3rem;
-  font-size: 1.25rem;
-}
-
-.sub_div_list ul li h1 {
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.sub_div_list p {
-  font-size: 1.25rem;
-  margin-bottom: 3rem;
 }

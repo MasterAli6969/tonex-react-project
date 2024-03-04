@@ -9,7 +9,7 @@ function WhyWe() {
           <div className={styles.div_title}>
             <h1>Почему мы?</h1>
           </div>
-          <div className={styles.sub_global_div}>
+          <div className={styles.sub_div}>
             <div className={styles.sub_div_right}>
               <h4 className={styles.title}>
                 Прозрачная <br />
@@ -22,15 +22,15 @@ function WhyWe() {
               <img alt="" src={tabsCoinTree} />
             </div>
             <div className={styles.sub_div_left}>
-              <div className={styles.sub_div_left_top}>
-                <div className={styles.sub_div_left_top_item}>
+              <div>
+                <div>
                   <h4 className={styles.title}>Обмен 24/7</h4>
                   <p className={styles.description}>
                     Полностью автоматический сервис. Меняйте хоть в обед, хоть
                     глубокой ночью
                   </p>
                 </div>
-                <div className={styles.sub_div_left_top_item}>
+                <div>
                   <h4 className={styles.title}>Моментальные обмены</h4>
                   <p className={styles.description}>
                     Собственный скрипт, позволяющий производить обмены
@@ -38,7 +38,7 @@ function WhyWe() {
                   </p>
                 </div>
               </div>
-              <div className={styles.sub_div_left_bottom}>
+              <div>
                 <h4 className={styles.title}>22958+ успешных обменов</h4>
                 <p className={styles.description}>
                   Нам доверяют все больше пользователей. Убедитесь <br />в этом

@@ -18,7 +18,7 @@ function Regulations() {
               regulationsData.map((item) => {
                 return (
                   <div key={item.id} className={styles.sub_div}>
-                    <div className={styles.sub_div_title}>
+                    <div>
                       <h1>{item.number}</h1>
                       <h4>{item.name}</h4>
                     </div>
@@ -39,7 +39,7 @@ function Regulations() {
                           item.itemsUl.map((subItem) => {
                             return (
                               <li key={subItem.id}>
-                                {subItem.title && <h1>{subItem.title}</h1>}
+                                {subItem.title && <h4>{subItem.title}</h4>}
                                 <p>{subItem.text}</p>
                               </li>
                             );

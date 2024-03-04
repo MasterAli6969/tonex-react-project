@@ -3,7 +3,9 @@ function CustomButton({ text, type }) {
   return (
     <>
       <div className={styles.div}>
-        <button type={type}>{text}</button>
+        <button type={type}>
+          <p>{text}</p>
+        </button>
       </div>
     </>
   );
