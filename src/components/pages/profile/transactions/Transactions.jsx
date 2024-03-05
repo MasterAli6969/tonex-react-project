@@ -29,7 +29,15 @@ function Transactions() {
                   <li key={item.id}>
                     <div>
                       <h4>{item.valueCurrency}</h4>
-                      <div>
+                      <div
+                        className={
+                          item.id === 1
+                            ? styles.green
+                            : item.id === 2
+                            ? styles.red
+                            : styles.grey
+                        }
+                      >
                         <i className={item.icon} />
                       </div>
                     </div>

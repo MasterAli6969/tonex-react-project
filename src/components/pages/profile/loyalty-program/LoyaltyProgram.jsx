@@ -5,10 +5,10 @@ function LoyaltyProgram() {
   return (
     <>
       <div className={styles.div}>
-        <h1>ПРОГРАММА ЛОЯЛЬНОСТИ</h1>
+        <h4>ПРОГРАММА ЛОЯЛЬНОСТИ</h4>
         <div className={styles.sub_div}>
           <div className={styles.sub_div_loyalty}>
-            <div className={styles.loyalty_laval}>
+            <div className={styles.loyalty_level}>
               <img src={profileProcent} />
               <h6>Уровень 1</h6>
             </div>

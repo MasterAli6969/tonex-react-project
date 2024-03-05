@@ -1,10 +1,9 @@
 .div {
-  padding: 2rem 0 2rem 0;
-  .div_list {
+  > ul {
     .list_item {
       cursor: pointer;
       border-radius: 0 10px 10px 0;
-      padding: 2rem;
+      padding: 2rem 2rem 2rem 6rem;
     }
     ._active {
       background-color: #2752e7;

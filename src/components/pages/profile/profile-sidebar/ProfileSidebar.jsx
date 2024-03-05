@@ -14,7 +14,7 @@ function ProfileSidebar() {
   return (
     <>
       <div className={styles.div}>
-        <ul className={styles.div_list}>
+        <ul>
           {sidebarData.length !== 0 &&
             sidebarData.map((item) => {
               return (
@@ -26,7 +26,7 @@ function ProfileSidebar() {
                     }`}
                     onClick={() => handleLiClick(item.id)}
                   >
-                    {item.text}
+                    <p>{item.text}</p>
                   </li>
                 </>
               );

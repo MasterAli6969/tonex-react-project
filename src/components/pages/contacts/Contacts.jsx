@@ -15,7 +15,7 @@ function Contacts() {
               <div className={styles.div_title}>
                 <h1>КОНТАКТЫ</h1>
               </div>
-              <ul className={styles.info_list}>
+              <ul>
                 {contactsData.length !== 0 &&
                   contactsData.map((item) => {
                     return (
@@ -31,7 +31,7 @@ function Contacts() {
           </div>
           <div className="col-md-6 col-sm-12">
             <div className={styles.sub_div2}>
-              <form className={styles.contacts_form}>
+              <form>
                 <h4>Остались вопросы или нужна консультация?</h4>
                 <p>
                   Оставьте заявку и наш менеджер свяжется с вами в ближайшее
@@ -40,7 +40,23 @@ function Contacts() {
                 <CustomInput placeholder={"Ваше имя"} type={"text"} />
                 <CustomInput placeholder={"Номер телефона"} type={"tel"} />
                 <CustomInput placeholder={"Email"} type={"email"} />
-                <CustomInput placeholder={"Сообщение"} type={"text"} />
+                <textarea placeholder="Сообщение" rows="4" cols="50" />
+                <div className="form-check my-4 d-flex align-items-center">
+                  <input
+                    className="form-check-input mt-2"
+                    style={{ marginRight: "0.3rem" }}
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    className="form-check-label mt-2"
+                    htmlFor="flexCheckDefault"
+                    style={{ fontSize: "0.75rem" }}
+                  >
+                    Даю согласие на обработку персональных данных
+                  </label>
+                </div>
                 <CustomButton text={"Оставить заявку"} />
               </form>
             </div>

@@ -4,7 +4,7 @@
     form {
       display: flex;
       margin-bottom: 2rem;
-      div {
+      > div {
         height: 2.8rem;
         display: flex;
         align-items: center;
@@ -13,7 +13,7 @@
         padding: 1rem;
         cursor: pointer;
       }
-      input {
+      > input {
         border-radius: 0 10px 10px 0;
       }
     }
@@ -24,11 +24,10 @@
       justify-content: space-between;
       padding-right: 2rem;
       margin-bottom: 2rem;
-      h4 {
-        font-size: 2rem;
-        font-weight: 500;
+      > h4 {
+        text-transform: uppercase;
       }
-      a {
+      > a {
         margin-top: 1rem;
       }
     }
@@ -37,7 +36,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0 2rem 0 2rem;
-    li {
+    text-transform: uppercase;
+    > li {
       max-width: 18.7rem;
       padding: 1rem;
       background-color: white;
@@ -46,33 +46,54 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 1rem;
-        h4 {
+        > h4 {
           font-size: 1.25rem;
-          font-weight: 500;
+          font-weight: bolder;
           padding-right: 3rem;
+          line-height: 1.5rem;
         }
-        div {
-          background-color: #00b69b33;
-          color: #00b69b;
+        > div {
+          width: 3rem;
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           border-radius: 10px;
           padding: 0.2rem;
           i {
             font-size: 2.5rem;
           }
         }
+        .green {
+          background-color: #00b69b33;
+          color: #00b69b;
+        }
+        .red {
+          background: #ef372674;
+          color: #ef3826;
+        }
+        .grey {
+          background-color: #38383892;
+          color: black;
+        }
       }
-      h6 {
-        font-size: 0.9rem;
-        font-weight: 600;
+      > h6 {
+        font-size: 0.8rem;
+        font-weight: bolder;
         margin-bottom: 2rem;
       }
       > div:last-child {
         opacity: 0.7;
-        font-size: 0.75;
-        div {
+        > p {
+          font-size: 0.75rem;
+        }
+        > div {
           display: flex;
           justify-content: space-between;
           margin-top: 1rem;
+          > p {
+            font-size: 0.6rem;
+          }
         }
       }
     }

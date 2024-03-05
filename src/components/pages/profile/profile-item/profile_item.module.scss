@@ -1,6 +1,7 @@
 .div {
   width: 100%;
   h4 {
+    text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 2rem;
   }
@@ -71,6 +72,7 @@
     .form {
       display: flex;
       flex-direction: column;
+      padding: 0 2rem 0 2rem;
       label {
         font-size: 1.25rem;
         margin-left: 1rem;
