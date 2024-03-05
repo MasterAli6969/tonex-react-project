@@ -16,7 +16,7 @@ function InfoTabs() {
                       : styles._line_background_wheat
                   }`}
                 >
-                  <div className={`${styles.sub_div_item}`}>
+                  <div>
                     <i className={item.icon} />
                     <p>{item.text}</p>
                   </div>

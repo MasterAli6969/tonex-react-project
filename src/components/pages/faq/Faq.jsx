@@ -25,7 +25,7 @@ function Faq() {
                           key={item.id}
                           className={`accordion-item mb-5 ${styles.accordion_item}`}
                         >
-                          <h2>
+                          <>
                             <button
                               className="accordion-button collapsed"
                               type="button"
@@ -34,10 +34,12 @@ function Faq() {
                               aria-expanded="false"
                               aria-controls="flush-collapseOne"
                             >
-                              <span>{item.number}</span>
-                              {item.title}
+                              <h4>
+                                <span>{item.number}</span>
+                                {item.title}
+                              </h4>
                             </button>
-                          </h2>
+                          </>
                           <div
                             id={item.idDataBsParent}
                             className="accordion-collapse collapse"

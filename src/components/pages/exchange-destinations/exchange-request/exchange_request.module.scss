@@ -1,13 +1,9 @@
 .form {
   background-color: #f8f8fc;
   border-radius: 10px;
-  padding: 5rem;
+  padding: 3rem 8rem 3rem 8rem;
   .div_title {
     margin-bottom: 3rem;
-    h4 {
-      font-size: 2.25rem;
-      font-weight: 500;
-    }
   }
   .sub_div_1 {
     display: flex;
@@ -15,9 +11,8 @@
     justify-content: space-between;
     margin-bottom: 3rem;
     .div_input_data {
-      h4 {
+      > h4 {
         font-size: 1.25rem;
-        font-weight: 500;
       }
       .div_input_data_item {
         display: flex;
@@ -59,8 +54,7 @@
   .sub_div_2 {
     margin-bottom: 3rem;
     h4 {
-      font-size: 1.25;
-      font-weight: 500;
+      font-size: 1.25rem;
       margin-bottom: 1rem;
     }
   }
@@ -69,9 +63,9 @@
     justify-content: space-between;
     margin-bottom: 3rem;
     .mail {
-      h4 {
+      > h4 {
         font-size: 1.25rem;
-        font-weight: 500;
+        margin-bottom: 1rem;
       }
       .mail_description {
         display: flex;
@@ -83,9 +77,9 @@
       }
     }
     .commiss {
-      h4 {
+      > h4 {
         font-size: 1.25rem;
-        font-weight: 500;
+        margin-bottom: 1rem;
       }
       select {
         width: 100%;
@@ -93,6 +87,7 @@
         background-color: white;
         border: none;
         border-radius: 10px;
+        padding-left: 1rem;
         option {
           margin-top: 5rem;
           border-radius: 10px;
@@ -120,7 +115,7 @@
       background-color: transparent;
       color: #2752e7;
       font-size: 0.9rem;
-      padding: 1rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
       margin: 0.5rem;
     }
   }

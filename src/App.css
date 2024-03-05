@@ -22,6 +22,7 @@ h1 {
   color: #2752e7;
   font-weight: 500;
   font-size: 5rem;
+  line-height: 6.5rem;
 }
 
 h4,
@@ -31,8 +32,9 @@ p {
 
 h4 {
   color: black;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 600;
+  line-height: 3rem;
 }
 
 h2 {

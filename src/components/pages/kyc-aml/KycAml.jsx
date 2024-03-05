@@ -33,6 +33,9 @@ function KycAml() {
           </div>
           <div className="col-12">
             <div className={styles.sub_div}>
+              <h4>
+                Сервис Cryptonex оставляет <br /> за собой право:
+              </h4>
               <ul className={styles.sub_list}>
                 {kycAmlData.length !== 0 &&
                   kycAmlData.map((item) => {
@@ -45,7 +48,7 @@ function KycAml() {
                         }
                         key={item.id}
                       >
-                        <h1>{item.number}</h1>
+                        <h4>{item.number}</h4>
                         <p>{item.text}</p>
                       </li>
                     );

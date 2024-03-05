@@ -18,7 +18,7 @@ function SearchingForTransaction() {
               <div className={styles.div_title}>
                 <h1>Поиск транзакции</h1>
               </div>
-              <form className={styles.form}>
+              <form>
                 <input type="text" placeholder="Введите id Вашей транзакции" />
                 <button type="submit">Найти</button>
               </form>
@@ -27,35 +27,33 @@ function SearchingForTransaction() {
 
           <div className="col-md-7 col-sm-12">
             <div className={styles.sub_div2}>
-              <div className={styles.sub_div2_item}>
-                <ul className={styles.status_list}>
+              <div>
+                <ul>
                   {statusListData.length !== 0 &&
                     statusListData.map((item) => {
                       return (
                         <li key={item.id}>
                           <i className={item.icon} />
                           <p>
-                            <strong>{item.text1}</strong>
+                            <span>{item.text1}</span>
                             {item.text2}
                           </p>
                         </li>
                       );
                     })}
                 </ul>
-                <div className={styles.data_list}>
-                  <ul className={styles.data_list_item}>
+                <div>
+                  <ul>
                     {dataListItemAbout.length !== 0 &&
                       dataListItemAbout.map((item, index) => {
                         return (
                           <li key={index}>
-                            <h4>
-                              <strong>{item}</strong>
-                            </h4>
+                            <p className={styles.data_name}>{item}</p>
                           </li>
                         );
                       })}
                   </ul>
-                  <ul className={styles.data_list_item}>
+                  <ul>
                     {dataListItemResponce.length !== 0 &&
                       dataListItemResponce.map((item, index) => {
                         return (
@@ -67,14 +65,14 @@ function SearchingForTransaction() {
                   </ul>
                 </div>
               </div>
-              <button className={styles.button}>Перейти к оплате</button>
+              <button>Перейти к оплате</button>
             </div>
           </div>
           <div className="col-md-5 col-sm-12">
             <div className={styles.sub_div3}>
-              <div className={styles.sub_div3_item}>
+              <div>
                 <h4>Обратите внимание!</h4>
-                <ul className={styles.info_list}>
+                <ul>
                   {dataInfoList.length !== 0 &&
                     dataInfoList.map((item, index) => {
                       return <li key={index}>{item}</li>;

@@ -59,6 +59,12 @@ function Regulations() {
                   </div>
                 );
               })}
+            <div className={styles.post_scriptum}>
+              <h4>
+                Спасибо, что выбрали наш обменный пунтк! <br /> Администрация
+                обменного пункта <a href="#">Crypto Online Exchange</a>
+              </h4>
+            </div>
           </div>
         </div>
       </div>
