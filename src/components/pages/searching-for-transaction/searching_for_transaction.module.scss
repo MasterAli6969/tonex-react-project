@@ -1,5 +1,4 @@
 .div {
-  padding: 0 8rem 7rem 8rem;
   .sub_div {
     width: 100%;
     display: flex;
@@ -10,7 +9,7 @@
       margin-bottom: 2rem;
     }
     form {
-      width: 50rem;
+      width: 50%;
       background-color: #f8f8fc;
       border-radius: 10px;
       padding: 3rem 4rem 3rem 4rem;
@@ -34,21 +33,23 @@
   }
   .sub_div1 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     .sub_div1_1 {
+      padding: 0 3rem 0 3rem;
       > div {
-        max-width: 50rem;
+        max-width: 100%;
         background-color: #f8f8fc;
         padding: 2rem;
         margin-bottom: 1rem;
         > ul {
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-between;
           margin-bottom: 2rem;
           li {
             display: flex;
             align-items: center;
+            margin-right: 1rem;
             i {
               margin-right: 0.4rem;
               font-size: 1.5rem;
@@ -64,17 +65,16 @@
           }
         }
         > div {
-          display: flex;
-          > ul {
-            margin-right: 4rem;
-            li {
-              margin-bottom: 1rem;
-              p {
-                font-size: 1rem;
-              }
-              .data_name {
-                font-weight: 600;
-              }
+          > div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            .data_name {
+              font-weight: 600;
+            }
+            > p {
+              font-size: 1rem;
             }
           }
         }
@@ -110,14 +110,58 @@
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1130px) {
   .div {
-    padding: 0;
     .sub_div {
       .div_title {
         h1 {
           font-size: 2.5rem;
           line-height: 3rem;
+        }
+      }
+    }
+    .sub_div1 {
+      flex-wrap: wrap;
+      .sub_div1_1 {
+        padding: 0;
+        > div {
+          > ul {
+            li {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+      .sub_div1_2 {
+        > div {
+          margin: 2rem 0 2rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .div {
+    .sub_div {
+      form {
+        width: 100%;
+      }
+    }
+    .sub_div1 {
+      .sub_div1_1 {
+        > div {
+          > div {
+            > div {
+              .data_name {
+                margin-bottom: 1rem;
+              }
+              p {
+                flex-basis: 100%;
+                font-size: 0.8rem;
+              }
+            }
+          }
         }
       }
     }

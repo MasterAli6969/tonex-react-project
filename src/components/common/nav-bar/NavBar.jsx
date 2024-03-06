@@ -27,33 +27,33 @@ function NavBar({
             className={`collapse navbar-collapse ${styles.menu_link}`}
             id="navbarDefault"
           >
-            <ul className="navbar-nav  me-auto mb-2 mb-lg-0 ">
-              <li className="nav-item">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li className="nav-item m-3">
                 <a className="nav-link active" aria-current="page" href="/">
                   Проверить
                 </a>
               </li>
-              <li className="nav-item mx-3">
+              <li className="nav-item m-3">
                 <a className="nav-link active" href="/">
                   Правила
                 </a>
               </li>
-              <li className="nav-item mx-3">
+              <li className="nav-item m-3">
                 <a className="nav-link active" href="/">
                   Помощь
                 </a>
               </li>
-              <li className="nav-item mx-3">
+              <li className="nav-item m-3">
                 <a className="nav-link active" href="/contacts">
                   Контакты
                 </a>
               </li>
-              <li className="nav-item mx-3">
+              <li className="nav-item m-3">
                 <a className="nav-link active" href="/contacts">
                   Контакты
                 </a>
               </li>
-              <li className="nav-item mx-3">
+              <li className="nav-item m-3">
                 <a className="nav-link active" href="/">
                   KYC/AML
                 </a>
@@ -62,7 +62,7 @@ function NavBar({
             <div>
               <div className="btn-group">
                 <div
-                  className={`btn btn-sm border border-dark rounded d-flex align-items-center mx-3 ${classColorButtonSelect}`}
+                  className={`btn btn-sm border border-dark rounded d-flex align-items-center m-2 ${classColorButtonSelect}`}
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -77,7 +77,7 @@ function NavBar({
             </div>
             <div>
               <button
-                className={`btn btn-sm border border-primary rounded px-3 ${classColorButtonLogin}`}
+                className={`btn btn-sm border border-primary rounded px-3 m-2 ${classColorButtonLogin}`}
                 type="submit"
               >
                 Вход

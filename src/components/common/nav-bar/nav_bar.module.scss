@@ -5,3 +5,9 @@
 .menu_link {
   margin-left: 10rem;
 }
+
+@media screen and (max-width: 1400px) {
+  .menu_link {
+    margin-left: 0;
+  }
+}

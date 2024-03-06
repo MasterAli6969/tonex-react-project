@@ -81,6 +81,32 @@
   .div {
     .sub_div {
       flex-wrap: wrap;
+      .sub_div_lists {
+        > ul {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          > li {
+            margin: 1rem 2rem 1rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .div {
+    .sub_div {
+      .sub_div_lists {
+        > ul {
+          > li {
+            margin: 1.5rem 3rem 0 0;
+          }
+          li:last-child {
+            margin-bottom: 3rem;
+          }
+        }
+      }
     }
   }
 }
