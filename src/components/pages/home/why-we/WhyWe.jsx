@@ -19,7 +19,7 @@ function WhyWe() {
                 Мы не скрываем комиссию, которую ставим при отправке. Вы можете
                 ее увеличить, при желании
               </p>
-              <img alt="" src={tabsCoinTree} />
+              <img src={tabsCoinTree} />
             </div>
             <div className={styles.sub_div_left}>
               <div>
@@ -44,7 +44,7 @@ function WhyWe() {
                   Нам доверяют все больше пользователей. Убедитесь <br />в этом
                   сами: посмотрите отзывы на www.bestchange.ru
                 </p>
-                <img alt="" src={tabsManeyCoin} />
+                <img src={tabsManeyCoin} />
               </div>
             </div>
           </div>

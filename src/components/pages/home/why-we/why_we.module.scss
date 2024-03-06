@@ -14,7 +14,9 @@
       height: 29.5rem;
       background-color: #f8f8fc;
       border-radius: 20px;
-      img {
+      margin: 0 1rem 1rem 1rem;
+      > img {
+        z-index: 1;
         position: absolute;
         bottom: 0px;
         right: 0px;
@@ -29,7 +31,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
       > div {
         max-width: 32.8rem;
         height: 14.1rem;
@@ -48,9 +49,10 @@
       background-color: #f8f8fc;
       border-radius: 20px;
       margin-top: 1.5rem;
-      img {
+      > img {
+        z-index: 1;
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
         max-width: 100%;
         height: auto;
@@ -60,9 +62,31 @@
 
   .title {
     margin: 2rem 0 2rem 2rem;
+    z-index: 999;
   }
 
   .description {
     margin-left: 2rem;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .sub_div {
+    .sub_div_right {
+      > img {
+        width: 40%;
+        height: auto;
+      }
+    }
+  }
+  .sub_div_left {
+    > div:last-child {
+      > img {
+        bottom: 0;
+        width: 30%;
+        height: auto;
+      }
+    }
   }
 }
