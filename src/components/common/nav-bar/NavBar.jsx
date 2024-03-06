@@ -72,7 +72,7 @@ function NavBar({
                   </div>
                   <div>RU</div>
                 </div>
-                <ul className="dropdown-menu">...</ul>
+                <ul className="dropdown-menu tog">...</ul>
               </div>
             </div>
             <div>
