@@ -1,3 +1,4 @@
+import styles from "./nav_bar.module.scss";
 function NavBar({
   classColorText,
   classColorButtonSelect,
@@ -7,7 +8,7 @@ function NavBar({
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg navbar-transparent pt-5 mb-5 ${classColorText}`}
+        className={`navbar navbar-expand-lg navbar-transparent pt-5  ${classColorText} ${styles.navBar}`}
       >
         <div className="container-fluid ">
           <img src={logo} />
@@ -22,7 +23,10 @@ function NavBar({
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarDefault">
+          <div
+            className={`collapse navbar-collapse ${styles.menu_link}`}
+            id="navbarDefault"
+          >
             <ul className="navbar-nav  me-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">
