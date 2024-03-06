@@ -1,5 +1,6 @@
 .form {
   background-color: #f8f8fc;
+  background-color: aquamarine;
   border-radius: 10px;
   padding: 3rem 8rem 3rem 8rem;
   .div_title {
@@ -7,7 +8,6 @@
   }
   .sub_div_1 {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 3rem;
     .div_input_data {
@@ -43,11 +43,11 @@
     }
     .change_arrow {
       display: flex;
-      justify-content: center;
       align-items: center;
-      padding-top: 1rem;
+      padding-top: 3rem;
       i {
         font-size: 1.5rem;
+        margin: 0 2rem 0 2rem;
       }
     }
   }
@@ -60,6 +60,7 @@
   }
   .sub_div_3 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 3rem;
     .mail {
@@ -117,6 +118,32 @@
       font-size: 0.9rem;
       padding: 0.5rem 1rem 0.5rem 1rem;
       margin: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .form {
+    padding: 3rem;
+    .div_title {
+      margin-bottom: 1rem;
+    }
+    .sub_div_1 {
+      display: block;
+      margin-bottom: 1rem;
+      .div_input_data {
+        .div_input_data_item {
+          margin: 0;
+        }
+      }
+      .change_arrow {
+        padding: 1rem 0 1rem 0;
+      }
+    }
+    .sub_div_4 {
+      .button {
+        font-size: 0.5rem;
+      }
     }
   }
 }

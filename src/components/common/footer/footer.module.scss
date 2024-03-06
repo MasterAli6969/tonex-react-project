@@ -19,10 +19,11 @@
     }
     .media_links {
       display: flex;
+      flex-wrap: wrap;
       > div {
         display: flex;
         font-size: 0.8rem;
-        margin: 0 2rem 0 6rem;
+        margin: 1rem 2rem 1rem 6rem;
         i {
           font-size: 1.5rem;
           margin-right: 1rem;

@@ -4,7 +4,7 @@ function CourseTable() {
   return (
     <>
       <div className="col-md-9 col-sm-12 p-0">
-        <div>
+        <div className={styles.div}>
           <table className={styles.table}>
             <thead>
               <tr className={styles.thead_title}>

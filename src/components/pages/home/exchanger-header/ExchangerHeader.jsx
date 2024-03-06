@@ -2,7 +2,7 @@ import Exchanger from "../../../common/exchanger/Exchanger";
 function ExchangerHeader() {
   return (
     <>
-      <div style={{ marginTop: "6rem" }} className="col-md-6 col-sm-12">
+      <div className="col-md-6 col-sm-12">
         <Exchanger />
       </div>
     </>

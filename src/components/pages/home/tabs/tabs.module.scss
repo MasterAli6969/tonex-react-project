@@ -1,17 +1,17 @@
 .div {
   display: flex;
   align-items: center;
+  margin-bottom: 3rem;
   .sub_div {
     position: relative;
-    width: 26.25rem;
+    width: 100%;
+    max-width: 26.25rem;
     height: 11.5rem;
     display: flex;
     align-items: center;
     margin-right: 1rem;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    div {
-      width: 24.8rem;
+    > div {
+      width: 100%;
       min-height: 115px;
       display: flex;
       align-items: center;
@@ -19,17 +19,34 @@
       border-radius: 10px;
       text-transform: uppercase;
       color: white;
-      padding-left: 1rem;
       z-index: 0;
-      p {
+      > p {
         font-size: 1.5rem;
+        margin-left: 1rem;
       }
     }
     img {
       position: absolute;
-      top: 0;
+      bottom: 0;
       right: 0;
       z-index: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .div {
+    flex-wrap: wrap;
+    .sub_div {
+      > div {
+        > p {
+          font-size: 1rem;
+        }
+      }
+      > img {
+        width: 12rem;
+        height: 12rem;
+      }
     }
   }
 }

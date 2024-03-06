@@ -4,8 +4,8 @@ function FeedbackSlider() {
   return (
     <>
       <div className="col-12 mt-5 mb-5">
-        <div className="">
-          <h2 className="fw-bolder">Отзывы о нас</h2>
+        <div className={styles.div_title}>
+          <h1 className="fw-bolder">Отзывы о нас</h1>
         </div>
         <div
           id="carouselExampleDark1"

@@ -1,4 +1,4 @@
-div {
+.div {
   .sub_div {
     border-radius: 10px;
     padding: 2.5rem 1rem 2.5rem 1rem;
@@ -22,5 +22,22 @@ div {
   ._line_background_wheat {
     background: #f8f8fc;
     color: black;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  div {
+    .sub_div {
+      > div {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .div {
+    margin-top: 2rem;
   }
 }

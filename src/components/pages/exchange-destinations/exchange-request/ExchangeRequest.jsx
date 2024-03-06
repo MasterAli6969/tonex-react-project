@@ -12,7 +12,7 @@ function ExchangeRequest() {
         </div>
         <div className={styles.sub_div_1}>
           <div className={styles.div_input_data}>
-            <h4>Вы отдадите BTC BitCoin</h4>
+            <h4>Вы отдадите BitCoin</h4>
             <div className={styles.div_input_data_item}>
               <div className={styles.coin_div}>
                 <img src={bitcoin1} alt="" />

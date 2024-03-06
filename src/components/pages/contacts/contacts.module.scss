@@ -18,20 +18,20 @@
     }
   }
   .sub_div2 {
-    form {
+    > form {
       display: flex;
       flex-direction: column;
       background-color: #f8f8fc;
       padding: 3rem 8rem 3rem 8rem;
-      > h4 {
+      h4 {
         text-transform: uppercase;
         margin-bottom: 1rem;
       }
-      > p {
+      p {
         line-height: 1.8rem;
         margin-bottom: 1rem;
       }
-      > input {
+      input {
         margin-bottom: 1rem;
       }
       textarea {
@@ -40,6 +40,35 @@
         border-radius: 0 10px 10px 0;
         padding: 2rem;
         margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .div {
+    .sub_div1 {
+      > ul {
+        li {
+          h4 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .div_title {
+        margin-bottom: 1rem;
+        > h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+    .sub_div2 {
+      > form {
+        padding: 2rem;
+
+        > h4 {
+          font-size: 1.5rem;
+        }
       }
     }
   }

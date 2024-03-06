@@ -1,4 +1,5 @@
 .div {
+  margin-bottom: 2rem;
   .div_title {
     border-bottom: 2px solid #f8f8fc;
     margin-bottom: 1rem;
@@ -9,7 +10,6 @@
   }
   ul {
     .li_item {
-      margin-right: 7rem;
       div {
         display: flex;
         align-items: center;
