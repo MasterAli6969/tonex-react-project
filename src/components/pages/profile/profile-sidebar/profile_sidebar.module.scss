@@ -11,3 +11,13 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .div {
+    > ul {
+      .list_item {
+        padding: 2rem 2rem 2rem 2rem;
+      }
+    }
+  }
+}

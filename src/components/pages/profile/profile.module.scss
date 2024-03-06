@@ -1,4 +1,10 @@
 .div {
   background-color: #f8f8fc;
-  padding: 0 0 2rem 8rem;
+  padding: 1rem 0 2rem 8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .div {
+    padding: 0 0 2rem 2rem;
+  }
 }

@@ -1,9 +1,9 @@
 import {
-  statusListData,
   dataListItemAbout,
   dataListItemResponce,
   dataInfoList,
-} from "../exchange-destinations/data";
+  statusListData,
+} from "./data";
 import NavBar from "../../common/nav-bar/NavBar";
 import CryptoneXNavLogo from "../../../assets/img/CryptoneXNavLogo.png";
 import styles from "./searching_for_transaction.module.scss";
@@ -12,73 +12,68 @@ function SearchingForTransaction() {
     <>
       <NavBar logo={CryptoneXNavLogo} />
       <div className={styles.div}>
-        <div className="row">
-          <div className="col-12">
-            <div className={styles.sub_div1}>
-              <div className={styles.div_title}>
-                <h1>Поиск транзакции</h1>
-              </div>
-              <form>
-                <input type="text" placeholder="Введите id Вашей транзакции" />
-                <button type="submit">Найти</button>
-              </form>
+        <div className="col-12">
+          <div className={styles.sub_div}>
+            <div className={styles.div_title}>
+              <h1>Поиск транзакции</h1>
             </div>
+            <form>
+              <input type="text" placeholder="Введите id Вашей транзакции" />
+              <button type="submit">Найти</button>
+            </form>
           </div>
-
-          <div className="col-md-7 col-sm-12">
-            <div className={styles.sub_div2}>
+        </div>
+        <div className={styles.sub_div1}>
+          <div className={styles.sub_div1_1}>
+            <div>
+              <ul>
+                {statusListData.length !== 0 &&
+                  statusListData.map((item) => {
+                    return (
+                      <li key={item.id}>
+                        <i className={item.icon} />
+                        <p>
+                          <span>{item.text1}</span>
+                          {item.text2}
+                        </p>
+                      </li>
+                    );
+                  })}
+              </ul>
               <div>
                 <ul>
-                  {statusListData.length !== 0 &&
-                    statusListData.map((item) => {
+                  {dataListItemAbout.length !== 0 &&
+                    dataListItemAbout.map((item, index) => {
                       return (
-                        <li key={item.id}>
-                          <i className={item.icon} />
-                          <p>
-                            <span>{item.text1}</span>
-                            {item.text2}
-                          </p>
+                        <li key={index}>
+                          <p className={styles.data_name}>{item}</p>
                         </li>
                       );
                     })}
                 </ul>
-                <div>
-                  <ul>
-                    {dataListItemAbout.length !== 0 &&
-                      dataListItemAbout.map((item, index) => {
-                        return (
-                          <li key={index}>
-                            <p className={styles.data_name}>{item}</p>
-                          </li>
-                        );
-                      })}
-                  </ul>
-                  <ul>
-                    {dataListItemResponce.length !== 0 &&
-                      dataListItemResponce.map((item, index) => {
-                        return (
-                          <li key={index}>
-                            <p>{item}</p>
-                          </li>
-                        );
-                      })}
-                  </ul>
-                </div>
-              </div>
-              <button>Перейти к оплате</button>
-            </div>
-          </div>
-          <div className="col-md-5 col-sm-12">
-            <div className={styles.sub_div3}>
-              <div>
-                <h4>Обратите внимание!</h4>
                 <ul>
-                  {dataInfoList.length !== 0 &&
-                    dataInfoList.map((item, index) => {
-                      return <li key={index}>{item}</li>;
+                  {dataListItemResponce.length !== 0 &&
+                    dataListItemResponce.map((item, index) => {
+                      return (
+                        <li key={index}>
+                          <p>{item}</p>
+                        </li>
+                      );
                     })}
                 </ul>
               </div>
+            </div>
+            <button>Перейти к оплате</button>
+          </div>
+          <div className={styles.sub_div1_2}>
+            <div>
+              <h4>Обратите внимание!</h4>
+              <ul>
+                {dataInfoList.length !== 0 &&
+                  dataInfoList.map((item, index) => {
+                    return <li key={index}>{item}</li>;
+                  })}
+              </ul>
             </div>
           </div>
         </div>

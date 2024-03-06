@@ -7,11 +7,12 @@
   }
   .sub_div {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 4rem;
     .profile_data {
       display: flex;
       align-items: center;
-      margin-right: 3rem;
+      margin: 0 3rem 3rem 0;
       img {
         margin-right: 2rem;
       }
@@ -38,6 +39,7 @@
     }
     .loyalty {
       max-width: 13rem;
+      height: 6.4rem;
       background-color: #2752e7;
       border-radius: 10px;
       color: white;
@@ -85,11 +87,21 @@
       }
       button {
         width: 45%;
-        border: none;
-        border-radius: 10px;
-        background-color: #2752e7;
-        color: white;
-        padding: 1rem 2rem 1rem 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .div {
+    .sub_div_form {
+      .form {
+        input {
+          width: 100%;
+        }
+        button {
+          width: 100%;
+        }
       }
     }
   }
