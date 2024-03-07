@@ -56,7 +56,7 @@ function Footer() {
           </div>
           <div className={styles.line} />
           <div className={styles.sub_div}>
-            <div>
+            <div className={styles.copywrite}>
               <p>Copyrights © 2022 All Rights Reserved by cryptonex.top</p>
             </div>
             <div className={styles.media_links}>

@@ -42,12 +42,10 @@
           background-color: white;
           border-radius: 0 5px 5px 0;
           padding: 0.8rem;
-          z-index: 999;
           > div {
             display: flex;
             align-items: center;
-            > img {
-            }
+
             > i {
               margin: 0 0.7rem 0 0.7rem;
               transition: transform 0.5s;
@@ -62,6 +60,7 @@
             display: none;
             padding-top: 0.5rem;
             background-color: white;
+            z-index: 999;
             > li {
               box-sizing: border-box;
               display: flex;

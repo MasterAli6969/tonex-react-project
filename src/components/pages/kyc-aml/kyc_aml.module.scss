@@ -27,10 +27,10 @@
       text-transform: uppercase;
       margin-bottom: 5rem;
     }
-    .sub_list {
+    > ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       text-align: left;
       li {
         max-width: 24.3rem;
@@ -49,6 +49,26 @@
       }
       .li_custom_width {
         max-width: 50rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .div {
+    .div_title {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    .sub_div {
+      > ul {
+        li {
+          max-width: 21rem;
+        }
+        .li_custom_width {
+          max-width: 47rem;
+        }
       }
     }
   }

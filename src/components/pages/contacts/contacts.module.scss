@@ -27,14 +27,14 @@
         text-transform: uppercase;
         margin-bottom: 1rem;
       }
-      p {
+      > p {
         line-height: 1.8rem;
         margin-bottom: 1rem;
       }
-      input {
+      > input {
         margin-bottom: 1rem;
       }
-      textarea {
+      > textarea {
         width: 100%;
         border: none;
         border-radius: 0 10px 10px 0;

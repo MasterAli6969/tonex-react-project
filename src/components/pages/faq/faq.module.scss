@@ -35,5 +35,17 @@
         line-height: 3rem;
       }
     }
+    .sub_div {
+      .accordion_item {
+        button {
+          h4 {
+            font-size: 1rem;
+            span {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
   }
 }

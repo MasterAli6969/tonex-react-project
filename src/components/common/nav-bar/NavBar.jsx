@@ -4,14 +4,15 @@ function NavBar({
   classColorButtonSelect,
   classColorButtonLogin,
   logo,
+  logoStyle,
 }) {
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg navbar-transparent pt-5  ${classColorText} ${styles.navBar}`}
+        className={`navbar navbar-expand-lg navbar-transparent pt-5 ${classColorText} ${styles.navBar}`}
       >
         <div className="container-fluid ">
-          <img src={logo} />
+          <img className={logoStyle} src={logo} />
           <button
             className="navbar-toggler"
             type="button"
@@ -24,37 +25,80 @@ function NavBar({
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className={`collapse navbar-collapse ${styles.menu_link}`}
+            className={`collapse navbar-collapse ${styles.menu_links}`}
             id="navbarDefault"
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li className="nav-item m-3">
-                <a className="nav-link active" aria-current="page" href="/">
+              <li
+                className={`${classColorText ? "" : "nav-item"} ${
+                  styles.menu_link
+                }`}
+              >
+                <a
+                  className={`${classColorText ? "" : "nav-link active"}`}
+                  aria-current="page"
+                  href="/"
+                >
                   Проверить
                 </a>
               </li>
-              <li className="nav-item m-3">
-                <a className="nav-link active" href="/">
+              <li
+                className={`${classColorText ? "" : "nav-item"} ${
+                  styles.menu_link
+                }`}
+              >
+                <a
+                  className={`${classColorText ? "" : "nav-link active"}`}
+                  href="/"
+                >
                   Правила
                 </a>
               </li>
-              <li className="nav-item m-3">
-                <a className="nav-link active" href="/">
+              <li
+                className={`${classColorText ? "" : "nav-item"} ${
+                  styles.menu_link
+                }`}
+              >
+                <a
+                  className={`${classColorText ? "" : "nav-link active"}`}
+                  href="/"
+                >
                   Помощь
                 </a>
               </li>
-              <li className="nav-item m-3">
-                <a className="nav-link active" href="/contacts">
+              <li
+                className={`${classColorText ? "" : "nav-item"} ${
+                  styles.menu_link
+                }`}
+              >
+                <a
+                  className={`${classColorText ? "" : "nav-link active"}`}
+                  href="/contacts"
+                >
                   Контакты
                 </a>
               </li>
-              <li className="nav-item m-3">
-                <a className="nav-link active" href="/contacts">
+              <li
+                className={`${classColorText ? "" : "nav-item"} ${
+                  styles.menu_link
+                }`}
+              >
+                <a
+                  className={`${classColorText ? "" : "nav-link active"}`}
+                  href="/contacts"
+                >
                   Контакты
                 </a>
               </li>
-              <li className="nav-item m-3">
-                <a className="nav-link active" href="/">
+              <li
+                className={`${classColorText ? "" : "nav-item"} ${
+                  styles.menu_link
+                }`}
+              >
+                <a
+                  className={`${classColorText ? "" : "nav-link active"}`}
+                  href="/"
+                >
                   KYC/AML
                 </a>
               </li>
@@ -62,7 +106,11 @@ function NavBar({
             <div>
               <div className="btn-group">
                 <div
-                  className={`btn btn-sm border border-dark rounded d-flex align-items-center m-2 ${classColorButtonSelect}`}
+                  className={`btn btn-sm border ${
+                    classColorButtonSelect && classColorButtonLogin
+                      ? "border-light"
+                      : "border-primary"
+                  }  rounded d-flex align-items-center m-2 ${classColorButtonSelect}`}
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -77,7 +125,11 @@ function NavBar({
             </div>
             <div>
               <button
-                className={`btn btn-sm border border-primary rounded px-3 m-2 ${classColorButtonLogin}`}
+                className={`btn btn-sm border ${
+                  classColorButtonSelect && classColorButtonLogin
+                    ? "border-light"
+                    : "border-primary"
+                }  rounded d-flex align-items-center m-2 ${classColorButtonLogin}`}
                 type="submit"
               >
                 Вход

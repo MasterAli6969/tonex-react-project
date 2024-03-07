@@ -1,9 +1,17 @@
 import authCard from "../../../assets/img/authCard.svg";
+import NavBar from "../../common/nav-bar/NavBar";
+import CryptoneXNavLogoWhite from "../../../assets/img/CryptoneXNavLogoWhite.png";
 import styles from "./registration.module.scss";
 function Login() {
   return (
     <>
       <div className={styles.div}>
+        <NavBar
+          logo={CryptoneXNavLogoWhite}
+          classColorText={styles.navbar}
+          classColorButtonLogin={styles.button_navbar_sign}
+          classColorButtonSelect={styles.button_navbar_sel}
+        />
         <form className={styles.form}>
           <img src={authCard} />
           <p>

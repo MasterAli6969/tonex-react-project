@@ -36,7 +36,7 @@ function KycAml() {
               <h4>
                 Сервис Cryptonex оставляет <br /> за собой право:
               </h4>
-              <ul className={styles.sub_list}>
+              <ul>
                 {kycAmlData.length !== 0 &&
                   kycAmlData.map((item) => {
                     return (

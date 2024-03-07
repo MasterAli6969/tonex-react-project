@@ -110,7 +110,21 @@
 }
 
 @media screen and (max-width: 820px) {
-  .sub_div {
-    flex-wrap: wrap;
+  .div {
+    .sub_div {
+      flex-wrap: wrap;
+      .sub_div_right {
+        height: 16rem;
+        padding: 1rem 7rem 0rem 2rem;
+        > img {
+          width: 30%;
+        }
+      }
+      .sub_div_left {
+        div:last-child {
+          padding: 1rem 4rem 0rem 2rem;
+        }
+      }
+    }
   }
 }

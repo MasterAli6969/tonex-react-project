@@ -2,12 +2,19 @@
   margin-bottom: 5rem;
 }
 
-.menu_link {
+.menu_links {
   margin-left: 10rem;
 }
 
+.menu_link {
+  margin: 2rem;
+}
+
 @media screen and (max-width: 1400px) {
-  .menu_link {
+  .menu_links {
     margin-left: 0;
+  }
+  .menu_link {
+    margin: 0.5rem;
   }
 }
