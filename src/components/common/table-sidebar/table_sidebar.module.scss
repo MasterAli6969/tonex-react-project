@@ -3,7 +3,7 @@
   .div_title {
     border-bottom: 2px solid #f8f8fc;
     margin-bottom: 1rem;
-    p {
+    > p {
       font-size: 1.25rem;
       opacity: 0.6;
     }
@@ -24,6 +24,18 @@
       border-radius: 0 10px 10px 0;
       background-color: #2752e7;
       color: white;
+    }
+  }
+  > div {
+    display: none;
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .div {
+    > div {
+      display: block;
     }
   }
 }
